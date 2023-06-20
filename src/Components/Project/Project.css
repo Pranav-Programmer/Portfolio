@@ -1,0 +1,336 @@
+.project{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   padding: 2rem;
+   background-color: transparent;
+   
+   display: flex;
+   flex-direction: column;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.project .All-header{
+   margin: 5rem 0 -2rem 0;
+}
+main{
+  width: 97%;
+  margin: 50px auto;
+  /*border:1px solid black;*/
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(2,50% );
+  grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: 150px;
+  height: 85vh;
+  text-align: center;
+  
+ }
+ .div1{ background: rgb(228, 177, 177); border-radius: 1rem;}
+ .div2{ background: rgb(177, 231, 210); border-radius: 1rem;}
+ .div3{ background: rgb(192, 225, 232); border-radius: 1rem;}
+ .div4{ background: rgb(234, 191, 211); border-radius: 1rem;}
+ .div5{ background: rgb(234, 234, 197); border-radius: 1rem;}
+ .div6{ background: rgb(235, 221, 194); border-radius: 1rem;}
+ 
+ main img{
+    width: 80%;
+    height: 11rem;
+    align-self: center;
+    margin-top: -2.7rem;
+    border-radius: 0.6rem;
+ }
+ main p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: -.5rem;
+ }
+ .more{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 86%;
+ }
+
+ @media screen and (max-width: 767px) {
+  .project {
+   margin-top: -67rem;
+    padding: 20px;
+    height: 500vh;
+  }
+  
+  .All-header {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .card-img {
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+  }
+  
+  .card-link {
+    font-size: 16px;
+  }
+  
+  .card-github {
+    font-size: 16px;
+  }
+}
+
+/* CSS for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+   .project {
+      margin-top: -19rem;
+     padding: 20px;
+     height: 220vh;
+  }
+  
+  .All-header {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(4, 4fr);
+    grid-gap: 30px;
+    width: 100%;
+    height: 31rem;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .card-img {
+    height: 300px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .card-link {
+    font-size: 18px;
+  }
+  
+  .card-github {
+    font-size: 18px;
+  }
+}
+
+/* CSS for desktop devices */
+@media only screen and (min-width: 992px) {
+  .project {
+    padding: 50px;
+  }
+  
+  .All-header {
+    font-size: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .card-img {
+    height: 400px;
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .card-title {
+    font-size: 30px;
+  }
+  
+  .card-link {
+    font-size: 24px;
+  }
+  
+  .card-github {
+    font-size: 24px;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 280px;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.flip-card-front {
+  
+  color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin-top: -.2rem;
+}
+
+.flip-card-back {
+  background:transparent;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.flip-text{
+  font-size: 15px;
+  line-height: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container{
+      margin-bottom: 2rem;
+      width: 100%;
+      padding: 35 10px;
+      margin-top: -8rem;
+  }
+
+  main img{
+      margin-top: -4.3rem;
+      height: 10.5rem;
+  }
+
+  .flip-card-inner{
+      margin-bottom: -2rem;
+  }
+  
+  .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 315px;
+      margin-top: 2rem;
+      border-radius: 10%;
+    }
+
+  /* .flip-card-back{
+      display: none;
+  } */
+  /* .flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: none;
+} */
+.flip-card-front {
+  background: transparent;
+  color: black;
+  z-index: 2;
+  display: flex;
+  margin-top: 0rem;
+ 
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 767px){
+   .project {
+      margin-top: -82rem;
+       padding: 20px;
+       height: 600vh;
+     }
+      .more{
+   display: none;
+ }
+}
+
+@media  only screen and (min-width: 479px) and (max-width: 699px)  {
+  .project {
+  margin-top: -73rem;
+   padding: 20px;
+   height: 550vh;
+ }
+}
+
+@media (max-width: 420px)  {
+  .project {
+  margin-top: -95rem;
+   padding: 20px;
+   height: 550vh;
+   margin-right: 16rem;
+   
+ }
+ .more{
+   display: none;
+ }
+}
+
+ 
