@@ -423,5 +423,8 @@ textarea.input {
     left: 1%;
     filter: blur(60px);
   }
+  #contact{
+    margin-left: 3%;
+  }
 }
 

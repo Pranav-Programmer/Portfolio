@@ -154,4 +154,7 @@ main.row{
         align-items: center;
         justify-content: center;
       }
+      #Experience{
+        margin-left: 4%;
+      }
 }

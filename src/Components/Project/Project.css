@@ -331,6 +331,9 @@ main{
  .more{
    display: none;
  }
+ #project{
+  margin-left: 5%;
+ }
 }
 
  

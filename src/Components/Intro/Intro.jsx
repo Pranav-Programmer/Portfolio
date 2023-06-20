@@ -237,7 +237,7 @@ function Intro() {
           <h4>UG 4th Year (B.Tech.)</h4>
         </span>
         <span className='Edu2'>
-        <p style={{ fontSize:'70%', textAlign:'justify', marginTop:'5%', width:'115%'}}>
+        <p style={{ fontSize:'70%', textAlign:'justify', marginTop:'5%', width:'115%', marginLeft: '.7rem'}}>
             
         As a fourth-year undergraduate I have gained valuable experience in web development through internships and have a strong foundation in programming and development languages. My internship at ACE Online allowed me to work with React.js, Redux, Node.js, and MongoDB, contributing to the development of an online test series platform. I have completed various projects, including TextUp, a versatile note-taking application, AlertEye, a drowsiness detection system, and LiFiVerse, a project utilizing Arduino for data transmission using light. I have achived first rank in the high market potential category for a Design Practicum project and being selected as a Microsoft Engage 2022 Mentee. I have also demonstrated leadership and teamwork through positions like teaching assistant and involvement in planning management team.
 
