@@ -96,12 +96,13 @@
 
   @media screen and (max-width: 420px){
     .All-header{
-      margin-top: 18rem;
+      margin-top: 90%;
     }
     .skills{
       left: .1rem;
       width: 98%;
     }
   }
+
   
    

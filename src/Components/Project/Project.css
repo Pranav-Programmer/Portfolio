@@ -322,7 +322,7 @@ main{
 
 @media (max-width: 420px)  {
   .project {
-  margin-top: -95rem;
+  margin-top: -280%;
    padding: 20px;
    height: 550vh;
    margin-right: 16rem;
