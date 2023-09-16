@@ -262,9 +262,12 @@ function Intro() {
           <div style={{top: '47%', left:'10%'}}>
           {/* <FloatinDiv img={NLJ} text1="My" text2="Best Work" /> */}
           </div>
+          
           <div style={{ position: "fixed", bottom: "0", right: "0", marginRight: ".7rem", marginBottom:'.7rem', zIndex:'100000', height:'85vh', width:'22rem', boxShadow:'0 0 0 2px #ccc' ,backgroundColor:'#fff', borderRadius:'10px' ,display: isModalOpen ? "block" : "none" }} className="chat-modal">
+          {/*
           <div style={{display:'flex', flexDirection:'row'}}>
           <MoreHorizIcon onClick={handleChatClick2}/>
+
           <div onClick={handleChatClick3}  className="chat-modal" style={{ position: "fixed", Top: "0px", Right: "0", marginLeft: ".3rem", marginTop:'3rem', zIndex:'1000000', height:'20vh', width:'11rem', boxShadow:'0 0 0 2px #ccc' ,backgroundColor:'#fff', borderRadius:'5px' ,display: isModalOpen2 ? "block" : "none" }}>
               <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'.3rem', marginTop:'-.1rem'}}>
                   <p style={textStyle6}><p style={{textDecoration:'none', color:'#575757', fontSize:'.9rem', marginLeft:'-4.5rem'}}><MailIcon style={{color:'#575757', fontSize:'1.2rem', marginBottom:'-.2rem', marginRight:'1rem'}}/>Contact</p></p>
@@ -288,6 +291,9 @@ function Intro() {
           </>
           )}
           </div>
+
+{/*
+          
             <div style={{height:'95%', overflowY:'hidden'}} onClick={handleChatClick3} >
           <ScrollableFeed>
               <div style={{boxShadow:'0 .7px 0 0 #ccc', borderRadius:'1rem', margin:'1rem .3rem', paddingBottom:'.5rem'}}>
@@ -337,7 +343,7 @@ function Intro() {
                   {/* <textarea  rows="1" cols="28"></textarea> */}
                   {/* <button onClick={sendMessage}>Send</button> */}
                   {/* <ColorButton  variant="contained">Send</ColorButton> */}
-                  
+{/*  
                   <div id="chat-log">
                     {chatLog.map((chat, index) => (
                       <div key={index}>
@@ -361,6 +367,7 @@ function Intro() {
                 }
                 </ScrollableFeed>
               </div>
+*/}
               <div style={{display:'flex', flexDirection:'row', marginLeft:'38%'}}>
                 {chatStarted && 
                  <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop:'-4.0rem', marginLeft:'-54%', height:'2rem'}}>
@@ -388,7 +395,9 @@ function Intro() {
             </div>
             </div>
           </div>
+          {/*
           <img style={{ position: "fixed", bottom: "0", right: "0", marginRight: "1rem", marginBottom:'1rem', zIndex:'10000', height:'2.5rem', width:'2.5rem' }} src={Sitelogo} alt="" onClick={handleChatClick}/>
+          
           {/* <div className="blur" style={{ background: "rgb(238 210 255)"}}></div>
         <div className="blur2"></div> */}
         </div>
